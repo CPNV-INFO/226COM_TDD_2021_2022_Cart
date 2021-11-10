@@ -82,7 +82,7 @@ namespace Shopiz
         /// This method adds a list of cart item in the current cart.
         /// </summary>
         /// <param name="cartItemsToAdd">List of cart items to add</param>
-        public void AddItem(List<CartItem> cartItemsToAdd)
+        public void AddItems(List<CartItem> cartItemsToAdd)
         {
             throw new NotImplementedException();
         }

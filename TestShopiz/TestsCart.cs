@@ -49,7 +49,7 @@ namespace TestShopiz
         }
 
         [Test]
-        public void AddItem_EmptyCartAddOneItem_Success()
+        public void AddItems_EmptyCartAddOneItem_Success()
         {
             //given
             string expectedId = "ZRTIVIA";
@@ -59,7 +59,7 @@ namespace TestShopiz
             Cart cart = new Cart(expectedId, expectedName);
 
             //when
-            cart.AddItem(GenerateCartItems(1,0));
+            cart.AddItems(GenerateCartItems(1,0));
 
             //then
             Assert.AreEqual(expectedCartSize, cart.CartItems.Count);
@@ -67,7 +67,7 @@ namespace TestShopiz
         }
 
         [Test]
-        public void AddItem_NotEmptyCartAddOneItem_Success()
+        public void AddItems_NotEmptyCartAddOneItem_Success()
         {
             //given
             string expectedId = "URTZR34";
@@ -75,10 +75,10 @@ namespace TestShopiz
             int expectedCartSize = 2;
             double expectedCartBalance = 100.0d;
             Cart cart = new Cart(expectedId, expectedName);
-            cart.AddItem(GenerateCartItems(1, 4));
+            cart.AddItems(GenerateCartItems(1, 4));
 
             //when
-            cart.AddItem(GenerateCartItems(1, 6));
+            cart.AddItems(GenerateCartItems(1, 6));
 
             //then
             Assert.AreEqual(expectedCartSize, cart.CartItems.Count);
@@ -86,7 +86,7 @@ namespace TestShopiz
         }
 
         [Test]
-        public void AddItem_NotEmptyCartAddItems_Success()
+        public void AddItems_NotEmptyCartAddItems_Success()
         {
             //given
             string expectedId = "784RTVAR";
@@ -94,10 +94,10 @@ namespace TestShopiz
             int expectedCartSize = 15;
             double expectedCartBalance = 1850.0d;
             Cart cart = new Cart(expectedId, expectedName);
-            cart.AddItem(GenerateCartItems(10, 3));
+            cart.AddItems(GenerateCartItems(10, 3));
 
             //when
-            cart.AddItem(GenerateCartItems(5,20));
+            cart.AddItems(GenerateCartItems(5,20));
 
             //then
             Assert.AreEqual(expectedCartSize, cart.CartItems.Count);
