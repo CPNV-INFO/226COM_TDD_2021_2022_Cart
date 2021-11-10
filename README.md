@@ -4,18 +4,18 @@
 ## Sujet à traiter
 Vous allez travailler sur un sujet avec un e-commerce et la gestion d'un panier d'achat.
 
-Il s'agira de manipuler le panier en lui ajoutant des articles, en les retirant. Tout cela en garantissant la cohérance des différents attributs du panier (par exemple la somme totale des articles présents dans le panier).
+Il s'agira de manipuler le panier en lui ajoutant des articles et en les retirant. Tout cela en garantissant la cohérence des différents attributs du panier (par exemple la somme totale des articles présents dans le panier).
 
-Si vous avez des questions sur que doit faire exactement le code, deux sources d'informations vous renseigneront:
+Si vous avez des questions sur ce que doit faire exactement le code, deux sources d'informations vous renseigneront:
 
 * les classes de tests vous aideront à comprendre le comportement attendu.
     * lisez bien les signatures de méthodes qui respectent la nomenclature suivante : NomDeLaMéthodeTest_Scenario_RésultatAttendu()
-    * le corps des méthodes de tests sont structurés pour facilement identifier :
+    * le corps des méthodes de tests est structuré pour facilement identifier :
         * le contexte avant le test (given)
         * l'événement à produire (when)
         * le résultat attendu (then)
 
-* les classes productives sont documentées. Au-dessus de chaque éléments (classes, méthodes) publiques, vous trouverez des informations sur les paramètres et les éventuelles exceptions.
+* les classes productives sont documentées. Au-dessus de chaque élément (classes, méthodes) publique, vous trouverez des informations sur les paramètres et les éventuelles exceptions.
 
 ---
 ### Prise en main du projet
